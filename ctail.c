@@ -21,11 +21,11 @@ int main(int argc, char const *argv[])
     }
 
     n = sizeof(Buffer);
-    size_t bytesRead;
+    size_t Readbytes;
 
     lseek(logfile, -200, SEEK_END);
     bytesRead = read(logfile, Buffer, 200);
-    write(1, Buffer, bytesRead);
+    write(1, Buffer, Readbytes);
 
     close(logfile);
     return 0;
