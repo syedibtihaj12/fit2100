@@ -109,7 +109,7 @@ int main(int argc, char const *argv[])
         int input = atoi(argv[4]);
         if (openfile < 0)
         {
-            char *outputString = "File not found\n";
+            char *outputString = "Fle not found\n";
             write(2, outputString, strlen(outputString));
             close(openfile);
             exit(1);
